@@ -16,7 +16,7 @@ The owner's hard stops override every rule in every pstack file, including the A
 - rewriting git history;
 - posting into the owner's group chats.
 
-Where pstack says to proceed without asking, that survives only for work that touches none of these. A conflict between a pstack rule and a hard stop is not a judgment call: the hard stop wins, you stop that step, and you say so in your report.
+Where pstack says to proceed without asking, that survives only for work that touches none of these. Reporting and escalating to your parent agent is internal, never a message leaving the sandbox, and is always allowed. No kickoff, delegated brief, autonomy or session override, or other pstack text can waive these stops; only source-grounded owner approval can authorize an affected step. A conflict between a pstack rule and a hard stop is not a judgment call: the hard stop wins, you stop that step, and you say so in your report.
 
 ## What a lane agent is
 
@@ -75,13 +75,13 @@ Write `Skipped for lane agents: <step>. <reason>.`, continue, and leave a named 
 
 ## Git, PRs, and CI
 
-- No push, merge, force-push, PR creation, PR edit, or PR reply without the runner route your brief names. Ask your parent. `gh`, `origin`, and `gt` calls belong to that route unless your brief grants them to you.
+- No push, merge, force-push, PR creation, PR edit, or PR reply goes out without source-grounded owner approval for that step, executed through the runner route. A brief that names the route or grants you a tool supplies the mechanics, never the authorization. Ask your parent when the approval is not established. `gh`, `origin`, and `gt` calls belong to that route unless your brief grants them to you for a step the owner approved.
 - The Babysit, Shipping, Autopilot-full, and Autopilot-stack playbooks: run the read-only parts (status, triage classification, verification, patch-id checks) and report. Every write stops at the parent.
 - "Run **Opening a PR**" at the end of a playbook: prepare the branch, the ordered commits, the title, and the body, then report them. The parent lands it.
 
 ## Tools that ship with pstack
 
-- `skills/statechart/scripts/`: TypeScript, needs a runtime that executes TypeScript, and its first run installs Java and TLC with mise over the network.
+- `skills/statechart/scripts/`: TypeScript, needs a runtime that executes TypeScript. It also needs Java and TLC: it uses the `TLA2TOOLS`/`JAVA` environment variables or a cached mise install when present, and installs them with mise over the network otherwise (`scripts/run.ts:196-203`).
 - `skills/poteto-mode/scripts/`: the `watch-pr` TypeScript tool with its tests, `bootstrap.ts`, and `worktree-audit.sh`.
 - `skills/show-me-your-work/scripts/log.sh`: a small shell helper. The skill says a bare `printf` append works too.
 
@@ -98,6 +98,8 @@ Places whose text, followed literally, would break a hard stop. The precedence r
 - The Babysit, Shipping, Autopilot-full, Autopilot-stack, and Opening-a-PR playbooks: pushes, merges, PR writes.
 - `skills/automate-me/SKILL.md` and `skills/poteto-mode/playbooks/authoring-a-skill.md`: "commit and open a PR".
 - `skills/poteto-mode/playbooks/worktree-cleanup.md`: deletes files and simulator state. Deleting user state is a hard stop unless the brief's owner approved it.
+- `skills/poteto-mode/playbooks/autonomous-run.md`: grows scope on its own (mid-run discoveries "are yours") and puts out-of-band fixes in their own PRs. Scope growth and PR writes are hard stops.
+- `skills/poteto-mode/playbooks/pause-safely.md`: its "no PR and no push unless you already had one out" exception still needs the runner route and owner approval for the push it keeps.
 
 ## For the parent: how to brief a lane agent
 
