@@ -1,3 +1,5 @@
+> _Lane-agent adaptation: read `docs/harness/lane-agents.md` at the pstack root before following this file. The owner's hard stops there override anything in it._
+
 ### Pause safely
 
 **You own a clean stop. Leave a checkpoint a cold-start agent can resume from.** This is explicit only. On "keep going", "going to bed, keep going", or "don't stop", do not pause.

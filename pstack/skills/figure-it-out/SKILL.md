@@ -4,6 +4,9 @@ description: "Design an auditable playbook when no narrower one fits: a large mi
 disable-model-invocation: true
 ---
 
+> _Lane-agent adaptation: read `docs/harness/lane-agents.md` at the pstack root before following this file. The owner's hard stops there override anything in it._
+
+
 # Figure it out
 
 When the task matches no playbook, design one. The deliverable before any code is the workflow itself: a sequence of phases that scales rigor to the task, runs the scientific method, and leaves a decision trail a human can audit after stepping away.

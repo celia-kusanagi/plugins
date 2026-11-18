@@ -4,6 +4,9 @@ description: "Apply when tempted to ask 'should I do X?' on reversible work."
 disable-model-invocation: true
 ---
 
+> _Lane-agent adaptation: read `docs/harness/lane-agents.md` at the pstack root before following this file. The owner's hard stops there override anything in it._
+
+
 # Never Block on the Human
 
 The human supervises asynchronously. Agents must stay unblocked. Make reasonable decisions, proceed, and let the human course-correct after the fact. Since code changes are reversible and reviewable, a wrong decision usually costs less than blocking.

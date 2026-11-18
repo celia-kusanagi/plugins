@@ -4,6 +4,9 @@ description: Guides users through pstack setup, /poteto-mode, and picking the sk
 disable-model-invocation: true
 ---
 
+> _Lane-agent adaptation: read `docs/harness/lane-agents.md` at the pstack root before following this file. The owner's hard stops there override anything in it._
+
+
 # Poteto help
 
 Answer the user's question about pstack, hand them a prompt they can send, and link the file the answer came from. For a help question, don't start the work. The user asked how, and a pstack run spends real tokens, so let them send the prompt.

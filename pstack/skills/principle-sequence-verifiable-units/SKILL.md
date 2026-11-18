@@ -4,6 +4,9 @@ description: "Apply to multi-step work (sweeps, migrations, runs of similar edit
 disable-model-invocation: true
 ---
 
+> _Lane-agent adaptation: read `docs/harness/lane-agents.md` at the pstack root before following this file. The owner's hard stops there override anything in it._
+
+
 # Sequence work into verifiable units
 
 Order work as small units that each end in a state you can check, and do not advance until the current one is green.

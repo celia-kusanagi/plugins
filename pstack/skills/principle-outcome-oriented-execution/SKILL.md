@@ -4,6 +4,9 @@ description: "Apply during planned rewrites and migrations with explicit phase b
 disable-model-invocation: true
 ---
 
+> _Lane-agent adaptation: read `docs/harness/lane-agents.md` at the pstack root before following this file. The owner's hard stops there override anything in it._
+
+
 # Outcome-Oriented Execution
 
 Optimize for the intended, verifiable end state rather than preserving smooth intermediate states.

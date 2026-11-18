@@ -1,3 +1,5 @@
+> _Lane-agent adaptation: read `docs/harness/lane-agents.md` at the pstack root before following this file. The owner's hard stops there override anything in it._
+
 # Render a chart
 
 Render each `.mmd` file that you show with the npm package `pele@1.9.0`, and give the user the SVG. Install Pele once, outside the repo. Write each SVG next to its `.mmd` file, with the same name. The API is at https://pele.run/api. Pass `{ limit: 1_000_000, outputLimit: 8_000_000, maxEdges: 10_000 }` as the options of `render`. Pele's defaults are smaller than a chart of 500 states can be. When Pele throws a `PeleError`, show the user the Mermaid text and the error.

@@ -4,6 +4,9 @@ description: "Apply when product, UX, or feature-scope tradeoffs come up. Choose
 disable-model-invocation: true
 ---
 
+> _Lane-agent adaptation: read `docs/harness/lane-agents.md` at the pstack root before following this file. The owner's hard stops there override anything in it._
+
+
 # Experience First
 
 When implementation convenience conflicts with user delight, choose delight.

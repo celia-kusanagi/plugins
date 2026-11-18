@@ -4,6 +4,9 @@ description: Mine the active transcript for durable learnings and route each to 
 disable-model-invocation: true
 ---
 
+> _Lane-agent adaptation: read `docs/harness/lane-agents.md` at the pstack root before following this file. The owner's hard stops there override anything in it._
+
+
 # Reflect
 
 Mine this conversation for durable learnings and route each to an edit on an existing skill.

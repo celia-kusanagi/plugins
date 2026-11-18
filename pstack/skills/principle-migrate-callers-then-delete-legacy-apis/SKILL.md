@@ -4,6 +4,9 @@ description: "Apply when introducing a new internal API while old callers still 
 disable-model-invocation: true
 ---
 
+> _Lane-agent adaptation: read `docs/harness/lane-agents.md` at the pstack root before following this file. The owner's hard stops there override anything in it._
+
+
 # Migrate Callers Then Delete Legacy APIs
 
 - Update tests to assert the new contract, and delete tests that only protect pre-refactor implementation details

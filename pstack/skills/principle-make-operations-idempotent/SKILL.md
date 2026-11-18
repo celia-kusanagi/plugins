@@ -4,6 +4,9 @@ description: "Apply when designing commands, lifecycle steps, or processing loop
 disable-model-invocation: true
 ---
 
+> _Lane-agent adaptation: read `docs/harness/lane-agents.md` at the pstack root before following this file. The owner's hard stops there override anything in it._
+
+
 # Make Operations Idempotent
 
 Design every state-changing operation to converge to the correct state however many times it runs and wherever the previous run stopped.

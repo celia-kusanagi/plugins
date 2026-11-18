@@ -4,6 +4,9 @@ description: "Apply when designing types, reviewing a function signature, or wri
 disable-model-invocation: true
 ---
 
+> _Lane-agent adaptation: read `docs/harness/lane-agents.md` at the pstack root before following this file. The owner's hard stops there override anything in it._
+
+
 # Type System Discipline
 
 Make the compiler reject impossible states, mismatched primitives, and unhandled variants.

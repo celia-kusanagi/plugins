@@ -1,3 +1,5 @@
+> _Lane-agent adaptation: read `docs/harness/lane-agents.md` at the pstack root before following this file. The owner's hard stops there override anything in it._
+
 ### Prototype
 
 **You own the design decision, not the code. The prototype is a throwaway instrument. The real build follows Feature.**

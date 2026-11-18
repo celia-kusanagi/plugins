@@ -1,3 +1,5 @@
+> _Branch `lane-agents`: pstack adapted for lane agents that are not Cursor. See `docs/harness/lane-agents.md`._
+
 # pstack
 
 i'm [poteto](https://x.com/poteto). i'm not a president or ceo, but i've worked with millions of lines of code at Meta, Netflix, and Cursor. i'm also on the react core team where i help build and maintain react compiler.

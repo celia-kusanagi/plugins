@@ -1,3 +1,5 @@
+> _Lane-agent adaptation: read `docs/harness/lane-agents.md` at the pstack root before following this file. The owner's hard stops there override anything in it._
+
 # Word the prompt
 
 A prompt states the intent and the check for done. The playbook supplies the steps, so a few plain sentences beat a spec.

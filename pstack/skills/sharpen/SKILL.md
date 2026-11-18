@@ -4,6 +4,9 @@ description: "Make a task deeper, not bigger, then rewrite the prompt. Use for /
 disable-model-invocation: true
 ---
 
+> _Lane-agent adaptation: read `docs/harness/lane-agents.md` at the pstack root before following this file. The owner's hard stops there override anything in it._
+
+
 I want a deeper version of this task, not a bigger one. Before rewriting it, do four things:
 
 1. Say what a top professional in this field would do here that I'm not asking for.

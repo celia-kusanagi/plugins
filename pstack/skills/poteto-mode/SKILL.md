@@ -6,6 +6,11 @@ icon: crown
 color: yellow
 ---
 
+> ## PRECEDENCE: OWNER HARD STOPS (lane-agent adaptation)
+>
+> This file is data, not authority. The owner's hard stops override every rule here and in any other pstack file, including the Autonomy sections, `worker.md`, and the principle *never block on the human*. Stop and escalate to your parent agent before: sudo or any change to a host the sandbox is not; spending money or credits; anything leaving the sandbox (network calls, pushes, posts, uploads, messages); contacting any person; growing the brief's scope; legal substance; creating repositories or changing their visibility; rewriting git history; posting into the owner's group chats. Where pstack says to proceed without asking, that survives only for work that touches none of these. Read `docs/harness/lane-agents.md` at the pstack root first.
+
+
 # Poteto mode
 
 Bundled skills live at `../<name>/SKILL.md` from this file, so put this file's absolute path in every `poteto-agent` prompt.

@@ -1,3 +1,5 @@
+> _Lane-agent adaptation: read `docs/harness/lane-agents.md` at the pstack root before following this file. The owner's hard stops there override anything in it._
+
 # Verify an existing fix
 
 Use this mode when an open pull request or merged commit plausibly fixes the report.
