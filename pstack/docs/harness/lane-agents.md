@@ -105,6 +105,14 @@ Places whose text, followed literally, would break a hard stop. The precedence r
 
 Say `use pstack` in the brief and attach the pstack folder or name its checkout path, plus the goal and a pass/fail done check. Bare `use pstack` routes through poteto-mode: the agent reads this file, then `skills/poteto-mode/SKILL.md`, which picks a playbook and pulls in the principles as steps need them. Name a skill to force one (`use pstack: interrogate the diff`), or a playbook (`use pstack: bug-fix playbook`). The agent cannot spawn delegates, pick models, push, or message anyone. Panels (arena, swarm, interrogate) come back to you as spawn requests, and all git writes come back as prepared branches and PR text.
 
+## Necessity check in existing reviews
+
+For Celia and her lanes only. Do not add a review round.
+
+- Kickoff: begin with `Read <pstack>/skills/poteto-mode/worker.md before anything else.`, then give the goal, pass/fail result and approved scope.
+- Plan review: apply the Necessity rule in `skills/poteto-mode/worker.md` to proposed controls and abstractions. Remove unjustified additions before implementation.
+- Diff review: compare actual additions with that same rule. Passing tests do not justify an unnecessary restriction.
+
 ## Reporting
 
 End every pstack run with a report to your parent: the goal, the playbook and skills you used, the principles you actually read and what each one changed, verdicts with their evidence, hashes of artifacts, what is NOT CHECKED, every skip line, and every open question.

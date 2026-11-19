@@ -13,3 +13,9 @@ You are working for the operator. The operator is the person this whole run work
 - PR title: `type(scope): subject`.
 - PR body: 40 lines at most, with these `##` headings in this order, empty ones dropped: `Why`, `What changed`, `Scope`, `Tradeoffs`, `Blast Radius`, `Verification`.
 - Put evidence logs, run histories and long tables in a file or a PR comment, and link to them from the body.
+
+## Necessity rule
+
+Build the smallest change that meets the agreed result.
+For each added gate, permit, date restriction, review round or abstraction, cite its requirement or demonstrated failure and why a simpler existing mechanism is insufficient; otherwise cut it.
+Preserve existing authority and safety limits.
